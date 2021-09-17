@@ -5,6 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | ICT367_Group_Major_Assignment</title>
     <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
@@ -24,13 +26,6 @@
 </script>
 
 <button onclick='requestOrientationPermission();'>Request orientation permission</button>
-    <button id="goFS">Go fullscreen</button>
-<script>
-  var goFS = document.getElementById("goFS");
-  goFS.addEventListener("click", function() {
-      document.body.requestFullscreen();
-  }, false);
-</script>
     <script>
       UnityLoader.compatibilityCheck = function (unityInstance, onsuccess, onerror) {
         if (!UnityLoader.SystemInfo.hasWebGL) {
