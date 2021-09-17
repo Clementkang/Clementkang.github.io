@@ -24,6 +24,13 @@
 </script>
 
 <button onclick='requestOrientationPermission();'>Request orientation permission</button>
+    <button id="goFS">Go fullscreen</button>
+<script>
+  var goFS = document.getElementById("goFS");
+  goFS.addEventListener("click", function() {
+      document.body.requestFullscreen();
+  }, false);
+</script>
     <script>
       UnityLoader.compatibilityCheck = function (unityInstance, onsuccess, onerror) {
         if (!UnityLoader.SystemInfo.hasWebGL) {
