@@ -5,25 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | ICT367_Group_Major_Assignment</title>
     <meta name="description" content="">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
-    <script type="text/javascript">
-    function requestOrientationPermission(){
-        DeviceOrientationEvent.requestPermission()
-        .then(response => {
-            if (response == 'granted') {
-                window.addEventListener('deviceorientation', (e) => {
-                    // do something with e
-                })
-            }
-        })
-        .catch(console.error)
-    }
-</script>
     <script>
       UnityLoader.compatibilityCheck = function (unityInstance, onsuccess, onerror) {
         if (!UnityLoader.SystemInfo.hasWebGL) {
@@ -34,7 +19,7 @@
         }
       }
       
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/ICT367_Group_Major_Assignment_VR_files.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/NEW.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -47,7 +32,6 @@
         <div class="webxr-link">Using <a href="https://github.com/De-Panther/unity-webxr-export" target="_blank" title="WebXR Export">WebXR Export</a></div>
         <div class="title">ICT367_Group_Major_Assignment</div>
       </div>
-              <button onclick='requestOrientationPermission();'>Request orientation permission</button>
     </div>
     <script>
       let enterARButton = document.getElementById('enterar');
