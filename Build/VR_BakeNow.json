@@ -1,7 +1,7 @@
 {
-"companyName": "DefaultCompany",
+"companyName": "GameDevGang",
 "productName": "ICT367_Group_Major_Assignment",
-"productVersion": "0.1",
+"productVersion": "1",
 "dataUrl": "VR_BakeNow.data.unityweb",
 "wasmCodeUrl": "VR_BakeNow.wasm.code.unityweb",
 "wasmFrameworkUrl": "VR_BakeNow.wasm.framework.unityweb",
